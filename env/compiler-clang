@@ -1,0 +1,9 @@
+LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+
+_HARDENING_FLAGS="-fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+CFLAGS="${CFLAGS} ${_HARDENING_FLAGS} -O2 -march=native -pipe"
+CXXFLAGS="${CXXFLAGS} ${_HARDENING_FLAGS} -O2 -march=native -pipe"
+LDFLAGS="${LDFLAGS} -Wl,-z,relro,-z,now -pie -unwindlib=libunwind"
+
+CC="clang"
+CXX="clang++"

@@ -1,0 +1,7 @@
+sys-devel/clang default-compiler-rt default-lld llvm-libunwind
+>=sys-auth/pambase-20210201.1 elogind
+x11-base/xorg-server suid
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
+>=net-dns/dnsmasq-2.85 script
+>=net-misc/spice-gtk-0.39-r2 usbredir
+app-emulation/qemu usbredir spice
